@@ -46,10 +46,10 @@ sudo apt-get -f install wget -y
 sudo apt-get -f install vim -y
 sudo apt-get -f install synaptic -y
 sudo add-apt-repository ppa:appgrid/stable -y
-sudo apt-get update -y
+#sudo apt-get update -y
 sudo apt-get -f install appgrid -y
 sudo add-apt-repository ppa:alessandro-strada/ppa -y
-sudo apt-get update
+#sudo apt-get update
 sudo apt-get -f install openvpn -y
 #sudo apt-get install --reinstall network-manager network-manager-gnome network-manager-openvpn network-manager-openvpn-gnome
 #sudo service network-manager restart
@@ -64,10 +64,10 @@ sudo apt-get -f install xvnc4viewer -y
 # Script will make directories
 # ============================
 
-mkdir Clear_Digital_Media 
-  cd Clear_Digital_Media 
-    mkdir Apps && mkdir Broadsign && mkdir Services && mkdir Notes
-cd 
+#mkdir Clear_Digital_Media 
+#  cd Clear_Digital_Media 
+#    mkdir Apps && mkdir Broadsign && mkdir Services && mkdir Notes
+#cd 
 
 
 # Script will use wget and download Teamviewer and install into tmp
@@ -100,7 +100,7 @@ sudo dpkg -i bsplayer-13_0_0-2-amd64.deb
 
 # Script will check for dependencies and push new commits
 # =======================================================
-sudo apt-get install -f -y
+#sudo apt-get install -f -y
 
 # Script will download the Image for the CDM Player & Stop Icon Badge in /Downloads/
 # ==================================================================================
@@ -198,7 +198,7 @@ gsettings set org.mate.background picture-filename /home/cleardigitalmedia/HNN_E
 
 # Copy finish_script.sh into root directory & initialize finish_script.sh
 # ========================================================================
-cd ~/Desktop/Clear_Digital_Media
+~cd ~/Desktop/Clear_Digital_Media
 sudo /Destop/Clear_Digital_Media/finish_script_mate.sh
 cd ~
 
