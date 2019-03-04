@@ -193,6 +193,7 @@ cd Downloads/
 wget https://s3-us-west-2.amazonaws.com/cdmftp/Public/Documents/HNN_ErrorScreen-01.jpg
 wget https://s3-us-west-2.amazonaws.com/cdmftp/Public/Documents/HNN_ErrorScreen_11-14-18.jpg
 wget https://s3-us-west-2.amazonaws.com/cdmftp/Public/Documents/HNN_ErrorScreen_12-27-18.jpg
+wget https://s3-us-west-2.amazonaws.com/cdmftp/Cleardigitalmedia+NetVision/Pictures/Roku_SplashScreen.jpg
 cd ~
 
 # Example: gsettings set org.mate.background picture-filename /home/test/Pictures/2.jpg
