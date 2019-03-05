@@ -197,7 +197,7 @@ wget https://s3-us-west-2.amazonaws.com/cdmftp/Cleardigitalmedia+NetVision/Pictu
 cd ~
 
 # Example: gsettings set org.mate.background picture-filename /home/test/Pictures/2.jpg
-gsettings set org.mate.background picture-filename /home/cleardigitalmedia/Downloads/HNN_ErrorScreen_12-27-18.jpg
+gsettings set org.mate.background picture-filename /home/cleardigitalmedia/Downloads/Roku_SplashScreen.jpg
 
 # Copy finish_script.sh into root directory & initialize finish_script.sh
 # ========================================================================
