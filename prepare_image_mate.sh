@@ -178,6 +178,7 @@ cd ~
 cd Desktop/Clear_Digital_Media
 sudo chmod +x finish_script_mate.sh
 sudo chmod +x client_data_push.sh
+sudo chmod +x repair.sh
 sudo cp client_data_push.sh /etc/cron.daily/
 cd ~
 
