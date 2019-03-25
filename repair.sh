@@ -23,6 +23,16 @@ gsettings set org.mate.background picture-filename /home/cleardigitalmedia/Downl
 # ========================================================================
 cd Desktop/Clear_Digital_Media
 
+# Script will change permssions on scripts that need permissions
+# ===============================================================
+cd Desktop/Clear_Digital_Media
+sudo chmod +x finish_script_mate.sh
+sudo chmod +x client_data_push.sh
+sudo chmod +x repair.sh
+sudo chmod +x prepare_image_mate.sh
+sudo cp client_data_push.sh /etc/cron.daily/
+cd ~
+
 # Place Custom Scripts onto Desktop
 sudo chmod +x desktop_custom_scripts.sh
   ./desktop_custom_scripts.sh
