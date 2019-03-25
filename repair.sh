@@ -1,5 +1,8 @@
 # Script will change the contents of the Bash Profile to match Bash\ Profile
 # ==========================================================================
+
+#git pull -y 
+
 cd Desktop/Clear_Digital_Media
 cp Bash\ Profile ~/.bashrc
 cd ~
@@ -23,3 +26,58 @@ cd Desktop/Clear_Digital_Media
 # Place Custom Scripts onto Desktop
 sudo chmod +x desktop_custom_scripts.sh
   ./desktop_custom_scripts.sh
+  
+  # Script will download the Image for the CDM Player & Stop Icon Badge in /Downloads/
+# ==================================================================================
+cd Downloads/
+
+wget https://s3-us-west-2.amazonaws.com/cdmftp/Cleardigitalmedia+NetVision/Icons/CDMIcon_64x64.svg
+wget https://s3-us-west-2.amazonaws.com/cdmftp/Cleardigitalmedia+NetVision/Icons/Stop_it.png
+
+cd ~
+
+
+# Script will move all of the necessary applications onto the desktop 
+# ===================================================================
+# First copy your desired application's icon from the /usr/share/applications directory to Desktop
+# sudo cp /usr/share/applications/filename.desktop ~/Desktop
+# sudo chmod +x ~/Desktop/filename.desktop
+
+# Copy applications to desktop
+sudo cp /usr/share/applications/mate-terminal.desktop ~/Desktop
+sudo chmod 777 ~/Desktop/mate-terminal.desktop
+
+sudo cp /usr/share/applications/network.desktop ~/Desktop
+sudo chmod 777 ~/Desktop/network.desktop
+
+sudo cp /usr/share/applications/mate-display-properties.desktop ~/Desktop
+sudo chmod 777 ~/Desktop/mate-display-properties.desktop
+
+sudo cp /usr/share/applications/mate-appearance-panel.desktop ~/Desktop
+sudo chmod 777 ~/Desktop/mate-appearance-panel.desktop
+
+sudo cp /usr/share/applications/mate-network-properties.desktop ~/Desktop
+sudo chmod 777 ~/Desktop/mate-network-properties.desktop
+
+sudo cp /usr/share/applications/com.teamviewer.TeamViewer.desktop ~/Desktop
+sudo chmod 777 ~/Desktop/com.teamviewer.TeamViewer.desktop
+
+sudo cp /usr/share/applications/nautilus.desktop ~/Desktop/
+sudo chmod 777 ~/Desktop/nautilus.desktop
+
+sudo cp /usr/share/applications/mate-settings-properties.desktop ~/Desktop
+sudo chmod 777 ~/Desktop/mate-settings-properties.desktop
+
+# Script copies bash.txt. to ~/Documents/
+# =======================================
+cd Desktop/Clear_Digital_Media/
+sudo cp bash.txt ~/Documents/
+cd ~
+
+# Script will prepare the desktop with two script icons to start/stop player
+# ==========================================================================
+cd Destop/Clear_Digital_Media/
+
+sudo ./desktop_custom_scripts.sh
+
+cd ~
